@@ -1,2 +1,174 @@
 # MakeMyTrip-Hero-
 A Repository from Rashal
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MakeMyTrip Hero Section</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Tahoma, sans-serif;
+        }
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                        url('https://media.istockphoto.com/id/478627080/photo/evening-view-of-ama-dablam.jpg?s=612x612&w=0&k=20&c=GLKvtQt1JVoOB4yR2WI86_fYOmG8WObeZP_QV_gFG_0=') center/cover;
+            color: white;
+            padding: 20px 0;
+            min-height: 80vh;       
+        }
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .booking-tabs {
+            display: flex;
+            gap: 20px;
+            margin: 40px auto;
+            max-width: 1200px;
+            padding: 0 20px;
+        }
+        .tab {
+            padding: 10px 20px;
+            border-radius: 5px 5px 0 0;
+            cursor: pointer;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        .tab.active {
+            background: #fff;
+            color: #333;
+        }
+        .booking-form {
+            background: white;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            position: relative;
+        }
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 20px;
+        }
+        .search-btn {
+            background: #4468f8;
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            border-radius: 4px;
+            font-size: 24px;
+            cursor: pointer;
+            width: 100%;
+        }
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            .booking-tabs {
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+            .tab {
+                flex: 1 1 120px;
+                text-align: center;
+            }
+            .booking-form {
+                margin: 0 20px;
+                padding: 20px;
+            }
+            .form-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        @media (min-width: 1200px) {
+            .hero-section {
+                min-height: 90vh;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="hero-section">
+        <nav class="nav-container">
+            <img src="https://promos.makemytrip.com/Growth/Images/1x/mmt_dt_top_icon.png" alt="logo" width="150" height="50"/>
+              </div>
+            <ul class="nav-links">
+                <li><a href="#">Flights</a></li>
+                <li><a href="#">Hotels</a></li>
+                <li><a href="#">Homestays</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Sign Up</a></li>
+            </ul>
+        </nav>
+        <div class="booking-tabs">
+            <div class="tab active">Flights  <img src="https://img.icons8.com/?size=100&id=kYNRQo0qDNCu&format=png&color=000000" alt="logo" width="50" height="50"/> </div>
+            <div class="tab active">Hotels  <img src="https://img.icons8.com/?size=100&id=8cB0z6Q5bzZK&format=png&color=000000" alt="logo" width="40" height="40"/> </div>
+            <div class="tab active">Homestays   <img src="https://img.icons8.com/?size=100&id=65tJ9OoBLzEh&format=png&color=000000" alt="logo" width="40" height="40"/> </div>
+            <div class="tab active">Holiday Packages  <img src="https://img.icons8.com/?size=100&id=31914&format=png&color=000000" alt="logo" width="40" height="40"/> </div>
+        </div>
+        <form class="booking-form">
+            <div class="form-grid">
+                <div class="form-group">
+                    <input type="text" placeholder="From">
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="To">
+                </div>
+                <div class="form-group">
+                    <input type="date" placeholder="Departure">
+                </div>
+                <div class="form-group">
+                    <input type="date" placeholder="Return">
+                </div>
+                <div class="form-group">
+                    <select>
+                        <option>Travellers</option>
+                        <option>1 Adult</option>
+                        <option>2 Adults</option>
+                    </select>
+                </div>
+            </div>
+            <button class="search-btn">Search</button>
+        </form>
+    </section>
+</body>
+</html>
+
+![mmthero](https://github.com/user-attachments/assets/87eb65b9-2b4a-4051-88ae-f273e49856b6)
+
